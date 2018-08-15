@@ -12,6 +12,7 @@ public class HelloAnnotation {
 	public static void main(String[] args) {
 		Method [] methods = HelloAnnotation.class.getDeclaredMethods();
 		
+		int i= 100;
 		for (Method method : methods) {
 			Test test =method.getAnnotation(Test.class);
 			if(test!=null){
